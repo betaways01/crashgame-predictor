@@ -10,8 +10,8 @@ warnings.filterwarnings("ignore")
 app = Flask(__name__)
 
 # Initialize variables
-model = pickle.load(open('https://github.com/betaways01/crash-game-predictor/blob/main/flaskapp/model/model.pkl', 'rb'))
-scaler = pickle.load(open('https://github.com/betaways01/crash-game-predictor/blob/main/flaskapp/model/scaler.pkl', 'rb'))
+model = pickle.load(open('/model/model.pkl', 'rb'))
+scaler = pickle.load(open('/model/scaler.pkl', 'rb'))
 prediction = None
 advice = ""
 prev_predictions = []
